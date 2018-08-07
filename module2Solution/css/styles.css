@@ -1,0 +1,80 @@
+body {
+	margin: 0;
+}
+.header {
+	margin: 40px 0 60px 0;
+}
+	.title {
+		font-family: "fantasy";
+		margin: 0;
+		text-align: center;
+	}
+
+	.box {
+		background-color: gray;
+	}
+	.chickenBox { 
+		width: calc((100% / 3) - (80px/3));
+		float: left;
+		margin-left: 20px;
+		margin-top: 20px;
+	}
+	.beefBox { 
+		width: calc((100% / 3) - (80px/3));
+		float: left;
+		margin-left: 20px;
+		margin-top: 20px;
+	}
+	.sushiBox { 
+		width: calc((100% / 3) - (80px/3));
+		float: left;
+		margin-left: 20px;
+		margin-top: 20px;
+	}
+		.boxTitle {
+			border: 2px solid black;
+			float: right;
+		}
+			.chicken {
+				background-color: pink;
+			}
+			.beef {
+				background-color: red;
+			}
+			.sushi {
+				background-color: yellow;
+			}
+				.boxTitle h4 {
+					padding: 5px 10px;
+					margin: 0;
+				}
+		.description {
+			margin: 0;
+			border: 2px solid black;
+			padding: 10px;
+			padding-top: 50px;
+		}
+
+	@media only screen and (max-width: 991px) {
+		.chickenBox { 
+			width: calc((100% / 2) - (30px));
+			
+		}
+		.beefBox { 
+			width: calc((100% / 2) - (30px));
+		}
+		.sushiBox { 
+			width: calc((100%) - (80px/2));
+		}
+	}
+	@media only screen and (max-width: 767px) {
+		.chickenBox { 
+			width: calc((100%) - (40px));
+		}
+		.beefBox { 
+			width: calc((100%) - (40px));
+		}
+		.sushiBox { 
+			width: calc((100%) - (80px/2));
+		}
+	}
